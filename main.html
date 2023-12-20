@@ -1,65 +1,110 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block vs Inline Elements</title>
+  <style>
+    .block-container {
+      display: block;
+    }
+
+    .inline-container {
+      display: inline;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<div>
-		<button class="inline-container" data-ns-test="block-inline-button">Test1</button>
-		<button class="inline-container" data-ns-test="block-inline-button">Test2</button>
-	</div>
-	<div>
-		<div class="block-container" data-ns-test="block-inline-div">Test1</div>
-		<div class="block-container" data-ns-test="block-inline-div">Test2</div>
-	</div>
 
-	<div>
-		<span class="inline-container" data-ns-test="block-inline-span">Test1</span>
-		<span class="inline-container" data-ns-test="block-inline-span">Test2</span>
-	</div>
+<!-- button -->
+<div class="inline-container" data-ns-test="block-inline-button">
+  <button>Test1</button>
+</div>
 
-	<div>
-		<p class="block-container" data-ns-test="block-inline-p">Test1</p>
-		<p class="block-container" data-ns-test="block-inline-p">Test2</p>
-	</div>
+<div class="inline-container" data-ns-test="block-inline-button">
+  <button>Test2</button>
+</div>
 
-	<div>
-		<input class="inline-container" data-ns-test="block-inline-input">Test1</input>
-		<input class="inline-container" data-ns-test="block-inline-input">Test2</input>
-	</div>
+<!-- div -->
+<div class="block-container" data-ns-test="block-inline-div">
+  <div>Test1</div>
+</div>
 
+<div class="block-container" data-ns-test="block-inline-div">
+  <div>Test2</div>
+</div>
 
-	<div>
-		<cite class="inline-container" data-ns-test="block-inline-cite">Test1</cite>
-		<cite class="inline-container" data-ns-test="block-inline-cite">Test2</cite>
-	</div>
+<!-- span -->
+<div class="inline-container" data-ns-test="block-inline-span">
+  <span>Test1</span>
+</div>
 
-	<div>
-		<code class="inline-container" data-ns-test="block-inline-code">Test1</code>
-		<code class="inline-container" data-ns-test="block-inline-code">Test2</code>
-	</div>
+<div class="inline-container" data-ns-test="block-inline-span">
+  <span>Test2</span>
+</div>
 
-	<div>
-		<h1 class="block-container" data-ns-test="data-ns-test="block-inline-h1">Test1</h1>
-		<h1 class="block-container" data-ns-test="block-inline-h1">Test2</h1>
-	</div>
+<!-- p -->
+<div class="block-container" data-ns-test="block-inline-p">
+  <p>Test1</p>
+</div>
 
-	<div>
-		<sup class="inline-container" data-ns-test="block-inline-sup">Test1</sup>
-		<sup class="inline-container" data-ns-test="block-inline-sup">Test2</sup>
-	</div>
+<div class="block-container" data-ns-test="block-inline-p">
+  <p>Test2</p>
+</div>
 
-	<div>
-		<sub class="inline-container" data-ns-test="block-inline-sub">Test1</sub>
-		<sub class="inline-container" data-ns-test="block-inline-sub">Test2</sub>
-	</div>
-    <script type="text/javascript" src="./script.js">
-</script>
+<!-- input -->
+<div class="inline-container" data-ns-test="block-inline-input">
+  <input type="text" value="Test1">
+</div>
+
+<div class="inline-container" data-ns-test="block-inline-input">
+  <input type="text" value="Test2">
+</div>
+
+<!-- cite -->
+<div class="inline-container" data-ns-test="block-inline-cite">
+  <cite>Test1</cite>
+</div>
+
+<div class="inline-container" data-ns-test="block-inline-cite">
+  <cite>Test2</cite>
+</div>
+
+<!-- code -->
+<div class="inline-container" data-ns-test="block-inline-code">
+  <code>Test1</code>
+</div>
+
+<div class="inline-container" data-ns-test="block-inline-code">
+  <code>Test2</code>
+</div>
+
+<!-- h1 -->
+<div class="block-container" data-ns-test="block-inline-h1">
+  <h1>Test1</h1>
+</div>
+
+<div class="block-container" data-ns-test="block-inline-h1">
+  <h1>Test2</h1>
+</div>
+
+<!-- sup -->
+<div class="inline-container" data-ns-test="block-inline-sup">
+  <sup>Test1</sup>
+</div>
+
+<div class="inline-container" data-ns-test="block-inline-sup">
+  <sup>Test2</sup>
+</div>
+
+<!-- sub -->
+<div class="inline-container" data-ns-test="block-inline-sub">
+  <sub>Test1</sub>
+</div>
+
+<div class="inline-container" data-ns-test="block-inline-sub">
+  <sub>Test2</sub>
+</div>
 
 </body>
-
 </html>
