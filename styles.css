@@ -1,2 +1,10 @@
 
 /* Your CSS Code here. */
+
+.block-container {
+	display: block;
+}
+
+.inline-container {
+    display: inline;
+}
